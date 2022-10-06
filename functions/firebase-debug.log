@@ -1,0 +1,496 @@
+[debug] [2022-10-06T08:29:09.674Z] ----------------------------------------------------------------------
+[debug] [2022-10-06T08:29:09.677Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\khehr\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js emulators:start
+[debug] [2022-10-06T08:29:09.678Z] CLI Version:   11.11.0
+[debug] [2022-10-06T08:29:09.679Z] Platform:      win32
+[debug] [2022-10-06T08:29:09.679Z] Node Version:  v16.17.0
+[debug] [2022-10-06T08:29:09.680Z] Time:          Thu Oct 06 2022 21:29:09 GMT+1300 (New Zealand Daylight Time)
+[debug] [2022-10-06T08:29:09.680Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-10-06T08:29:09.782Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-10-06T08:29:09.783Z] > authorizing via signed-in user (khehrainderjit6@gmail.com)
+[info] i  emulators: Starting emulators: functions, hosting {"metadata":{"emulator":{"name":"hub"},"message":"Starting emulators: functions, hosting"}}
+[debug] [2022-10-06T08:29:09.832Z] [hub] writing locator at C:\Users\khehr\AppData\Local\Temp\hub-ecomerrece.json
+[warn] !  functions: The following emulators are not running, calls to these services from the Functions emulator will affect production: auth, firestore, database, pubsub, storage, eventarc {"metadata":{"emulator":{"name":"functions"},"message":"The following emulators are not running, calls to these services from the Functions emulator will affect production: \u001b[1mauth, firestore, database, pubsub, storage, eventarc\u001b[22m"}}
+[info] +  functions: Using node@16 from host. {"metadata":{"emulator":{"name":"functions"},"message":"Using node@16 from host."}}
+[debug] [2022-10-06T08:29:09.882Z] defaultcredentials: writing to file C:\Users\khehr\AppData\Roaming\firebase\khehrainderjit6_gmail_com_application_default_credentials.json
+[debug] [2022-10-06T08:29:09.885Z] Setting GAC to C:\Users\khehr\AppData\Roaming\firebase\khehrainderjit6_gmail_com_application_default_credentials.json {"metadata":{"emulator":{"name":"functions"},"message":"Setting GAC to C:\\Users\\khehr\\AppData\\Roaming\\firebase\\khehrainderjit6_gmail_com_application_default_credentials.json"}}
+[debug] [2022-10-06T08:29:09.889Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/ecomerrece/adminSdkConfig [none]
+[debug] [2022-10-06T08:29:11.079Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/ecomerrece/adminSdkConfig 200
+[debug] [2022-10-06T08:29:11.079Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/ecomerrece/adminSdkConfig {"projectId":"ecomerrece","storageBucket":"ecomerrece.appspot.com","locationId":"us-central"}
+[debug] [2022-10-06T08:29:11.109Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/ecomerrece/sites 
+[debug] [2022-10-06T08:29:12.663Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/ecomerrece/sites 200
+[debug] [2022-10-06T08:29:12.663Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/ecomerrece/sites {"sites":[{"name":"projects/ecomerrece/sites/ecomerrece","defaultUrl":"https://ecomerrece.web.app","appId":"1:739608616188:web:1730c92b53f3fe814c0b79","type":"DEFAULT_SITE"}]}
+[debug] [2022-10-06T08:29:12.664Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/ecomerrece/webApps/1:739608616188:web:1730c92b53f3fe814c0b79/config [none]
+[debug] [2022-10-06T08:29:14.065Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/ecomerrece/webApps/1:739608616188:web:1730c92b53f3fe814c0b79/config 200
+[debug] [2022-10-06T08:29:14.066Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/ecomerrece/webApps/1:739608616188:web:1730c92b53f3fe814c0b79/config {"projectId":"ecomerrece","appId":"1:739608616188:web:1730c92b53f3fe814c0b79","storageBucket":"ecomerrece.appspot.com","locationId":"us-central","apiKey":"AIzaSyDR7MT0ZC4qeyzUzUBpz-nSS2lT3z_1TMs","authDomain":"ecomerrece.firebaseapp.com","messagingSenderId":"739608616188","measurementId":"G-RVXZE52632"}
+[info] i  hosting: Serving hosting files from: build {"metadata":{"emulator":{"name":"hosting"},"message":"Serving hosting files from: \u001b[1mbuild\u001b[22m"}}
+[info] +  hosting: Local server: http://localhost:5000 {"metadata":{"emulator":{"name":"hosting"},"message":"Local server: \u001b[4m\u001b[1mhttp://localhost:5000\u001b[22m\u001b[24m"}}
+[debug] [2022-10-06T08:29:14.128Z] Ignoring unsupported arg: auto_download {"metadata":{"emulator":{"name":"ui"},"message":"Ignoring unsupported arg: auto_download"}}
+[debug] [2022-10-06T08:29:14.128Z] Ignoring unsupported arg: port {"metadata":{"emulator":{"name":"ui"},"message":"Ignoring unsupported arg: port"}}
+[debug] [2022-10-06T08:29:14.128Z] Starting Emulator UI with command {"binary":"node","args":["C:\\Users\\khehr\\.cache\\firebase\\emulators\\ui-v1.9.0\\server\\server.js"],"optionalArgs":[],"joinArgs":false} {"metadata":{"emulator":{"name":"ui"},"message":"Starting Emulator UI with command {\"binary\":\"node\",\"args\":[\"C:\\\\Users\\\\khehr\\\\.cache\\\\firebase\\\\emulators\\\\ui-v1.9.0\\\\server\\\\server.js\"],\"optionalArgs\":[],\"joinArgs\":false}"}}
+[info] i  ui: Emulator UI logging to ui-debug.log {"metadata":{"emulator":{"name":"ui"},"message":"Emulator UI logging to \u001b[1mui-debug.log\u001b[22m"}}
+[debug] [2022-10-06T08:29:14.461Z] Web / API server started at localhost:4000
+ {"metadata":{"emulator":{"name":"ui"},"message":"Web / API server started at localhost:4000\n"}}
+[info] i  functions: Watching "C:\Users\khehr\ecommerce\functions" for Cloud Functions... {"metadata":{"emulator":{"name":"functions"},"message":"Watching \"C:\\Users\\khehr\\ecommerce\\functions\" for Cloud Functions..."}}
+[debug] [2022-10-06T08:29:14.664Z] Validating nodejs source
+[debug] [2022-10-06T08:29:18.852Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.1",
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0",
+    "stripe": "^10.12.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.9.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2022-10-06T08:29:18.852Z] Building nodejs source
+[debug] [2022-10-06T08:29:18.853Z] Analyzing nodejs backend spec
+[debug] [2022-10-06T08:29:18.854Z] Could not find functions.yaml. Must use http discovery
+[debug] [2022-10-06T08:29:19.169Z] Serving at port 9006
+
+[debug] [2022-10-06T08:29:19.357Z] Got response from /__/functions.yaml {"endpoints":{"api":{"platform":"gcfv1","httpsTrigger":{},"entryPoint":"api"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2022-10-06T08:29:19.369Z] shutdown requested via /__/quitquitquit
+
+[info] +  functions: Loaded functions definitions from source: api. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: api."}}
+[info] +  functions[us-central1-api]: http function initialized (http://localhost:5001/ecomerrece/us-central1/api). {"metadata":{"emulator":{"name":"functions"},"message":"\u001b[1mhttp\u001b[22m function initialized (http://localhost:5001/ecomerrece/us-central1/api)."}}
+[info] 
+┌─────────────────────────────────────────────────────────────┐
+│ ✔  All emulators ready! It is now safe to connect your app. │
+│ i  View Emulator UI at http://localhost:4000                │
+└─────────────────────────────────────────────────────────────┘
+
+┌───────────┬────────────────┬─────────────────────────────────┐
+│ Emulator  │ Host:Port      │ View in Emulator UI             │
+├───────────┼────────────────┼─────────────────────────────────┤
+│ Functions │ localhost:5001 │ http://localhost:4000/functions │
+├───────────┼────────────────┼─────────────────────────────────┤
+│ Hosting   │ localhost:5000 │ n/a                             │
+└───────────┴────────────────┴─────────────────────────────────┘
+  Emulator Hub running at localhost:4400
+  Other reserved ports: 4500
+
+Issues? Report them at https://github.com/firebase/firebase-tools/issues and attach the *-debug.log files.
+ 
+[debug] [2022-10-06T08:34:05.629Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2022-10-06T08:34:05.630Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2022-10-06T08:34:05.631Z] Accepted request POST /ecomerrece/us-central1/api/payments/create?total=359997 --> us-central1-api
+[debug] [2022-10-06T08:34:05.635Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2022-10-06T08:34:05.636Z] [functions] Got req.url=/ecomerrece/us-central1/api/payments/create?total=359997, mapping to path=/payments/create?total=359997 {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/ecomerrece/us-central1/api/payments/create?total=359997, mapping to path=/payments/create?total=359997"}}
+[debug] [2022-10-06T08:34:05.648Z] [worker-pool] addWorker(us-central1-api) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] addWorker(us-central1-api)"}}
+[debug] [2022-10-06T08:34:05.649Z] [worker-pool] Adding worker with key us-central1-api, total=1 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Adding worker with key us-central1-api, total=1"}}
+[debug] [2022-10-06T08:34:05.655Z] [work-queue] {"queueLength":1,"workRunningCount":1}
+[debug] [2022-10-06T08:34:05.656Z] [work-queue] {"queueLength":0,"workRunningCount":2}
+[debug] [2022-10-06T08:34:05.656Z] Accepted request POST /ecomerrece/us-central1/api/payments/create?total=359997 --> us-central1-api
+[debug] [2022-10-06T08:34:05.661Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2022-10-06T08:34:05.661Z] [functions] Got req.url=/ecomerrece/us-central1/api/payments/create?total=359997, mapping to path=/payments/create?total=359997 {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/ecomerrece/us-central1/api/payments/create?total=359997, mapping to path=/payments/create?total=359997"}}
+[debug] [2022-10-06T08:34:05.661Z] [worker-pool] submitRequest(triggerId=us-central1-api) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-api)"}}
+[debug] [2022-10-06T08:34:05.662Z] [worker-us-central1-api-3ff3804d-ebd9-4a15-9b5c-d81ef1d50872]: BUSY {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-api-3ff3804d-ebd9-4a15-9b5c-d81ef1d50872]: BUSY"}}
+[debug] [2022-10-06T08:34:05.667Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2022-10-06T08:34:05.673Z] [worker-us-central1-api-3ff3804d-ebd9-4a15-9b5c-d81ef1d50872]: exited {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-api-3ff3804d-ebd9-4a15-9b5c-d81ef1d50872]: exited"}}
+[debug] [2022-10-06T08:34:05.673Z] [worker-us-central1-api-3ff3804d-ebd9-4a15-9b5c-d81ef1d50872]: FINISHED {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-api-3ff3804d-ebd9-4a15-9b5c-d81ef1d50872]: FINISHED"}}
+[debug] FirebaseError: Failed to load function.
+    at Timeout._onTimeout (C:\Users\khehr\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsRuntimeWorker.js:152:24)
+    at listOnTimeout (node:internal/timers:559:17)
+    at processTimers (node:internal/timers:502:7) {"metadata":{"emulator":{"name":"functions"},"message":{"name":"FirebaseError","children":[],"exit":1,"message":"Failed to load function.","status":500}}}
+[debug] [2022-10-06T08:34:35.685Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[info] i  hosting: 127.0.0.1 - - [06/Oct/2022:08:34:40 +0000] "GET /__/firebase/init.js?useEmulator=true HTTP/1.1" 200 - "http://localhost:5000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [06/Oct/2022:08:34:40 +0000] \"GET /__/firebase/init.js?useEmulator=true HTTP/1.1\" 200 - \"http://localhost:5000/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36\""}}
+[debug] [2022-10-06T08:35:25.005Z] File C:\Users\khehr\ecommerce\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\khehr\\ecommerce\\functions\\index.js changed, reloading triggers"}}
+[debug] [2022-10-06T08:35:25.699Z] File C:\Users\khehr\ecommerce\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\khehr\\ecommerce\\functions\\index.js changed, reloading triggers"}}
+[debug] [2022-10-06T08:35:26.701Z] Validating nodejs source
+[debug] [2022-10-06T08:35:31.082Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.1",
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0",
+    "stripe": "^10.12.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.9.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2022-10-06T08:35:31.083Z] Building nodejs source
+[debug] [2022-10-06T08:35:31.083Z] Analyzing nodejs backend spec
+[debug] [2022-10-06T08:35:31.085Z] Could not find functions.yaml. Must use http discovery
+[debug] [2022-10-06T08:35:31.111Z] File C:\Users\khehr\ecommerce\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\khehr\\ecommerce\\functions\\index.js changed, reloading triggers"}}
+[debug] [2022-10-06T08:35:31.238Z] File C:\Users\khehr\ecommerce\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\khehr\\ecommerce\\functions\\index.js changed, reloading triggers"}}
+[debug] [2022-10-06T08:35:31.484Z] Serving at port 9006
+
+[debug] [2022-10-06T08:35:31.682Z] Got response from /__/functions.yaml {"endpoints":{"api":{"platform":"gcfv1","httpsTrigger":{},"entryPoint":"api"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2022-10-06T08:35:31.695Z] shutdown requested via /__/quitquitquit
+
+[info] +  functions: Loaded functions definitions from source: api. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: api."}}
+[debug] [2022-10-06T08:35:32.240Z] Validating nodejs source
+[debug] [2022-10-06T08:35:36.152Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.1",
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0",
+    "stripe": "^10.12.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.9.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2022-10-06T08:35:36.152Z] Building nodejs source
+[debug] [2022-10-06T08:35:36.153Z] Analyzing nodejs backend spec
+[debug] [2022-10-06T08:35:36.154Z] Could not find functions.yaml. Must use http discovery
+[debug] [2022-10-06T08:35:36.173Z] File C:\Users\khehr\ecommerce\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\khehr\\ecommerce\\functions\\index.js changed, reloading triggers"}}
+[debug] [2022-10-06T08:35:36.480Z] Serving at port 9006
+
+[debug] [2022-10-06T08:35:36.666Z] Got response from /__/functions.yaml {"endpoints":{"api":{"platform":"gcfv1","httpsTrigger":{},"entryPoint":"api"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2022-10-06T08:35:36.672Z] shutdown requested via /__/quitquitquit
+
+[info] +  functions: Loaded functions definitions from source: api. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: api."}}
+[debug] [2022-10-06T08:35:37.177Z] Validating nodejs source
+[debug] [2022-10-06T08:35:41.334Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.1",
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0",
+    "stripe": "^10.12.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.9.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2022-10-06T08:35:41.334Z] Building nodejs source
+[debug] [2022-10-06T08:35:41.334Z] Analyzing nodejs backend spec
+[debug] [2022-10-06T08:35:41.336Z] Could not find functions.yaml. Must use http discovery
+[debug] [2022-10-06T08:35:41.367Z] File C:\Users\khehr\ecommerce\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\khehr\\ecommerce\\functions\\index.js changed, reloading triggers"}}
+[debug] [2022-10-06T08:35:41.695Z] Serving at port 9006
+
+[debug] [2022-10-06T08:35:41.872Z] File C:\Users\khehr\ecommerce\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\khehr\\ecommerce\\functions\\index.js changed, reloading triggers"}}
+[debug] [2022-10-06T08:35:41.955Z] Got response from /__/functions.yaml {"endpoints":{"api":{"platform":"gcfv1","httpsTrigger":{},"entryPoint":"api"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2022-10-06T08:35:41.966Z] shutdown requested via /__/quitquitquit
+
+[info] +  functions: Loaded functions definitions from source: api. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: api."}}
+[debug] [2022-10-06T08:35:42.175Z] File C:\Users\khehr\ecommerce\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\khehr\\ecommerce\\functions\\index.js changed, reloading triggers"}}
+[debug] [2022-10-06T08:35:43.177Z] Validating nodejs source
+[debug] [2022-10-06T08:35:47.386Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.1",
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0",
+    "stripe": "^10.12.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.9.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2022-10-06T08:35:47.386Z] Building nodejs source
+[debug] [2022-10-06T08:35:47.386Z] Analyzing nodejs backend spec
+[debug] [2022-10-06T08:35:47.387Z] Could not find functions.yaml. Must use http discovery
+[debug] [2022-10-06T08:35:47.405Z] File C:\Users\khehr\ecommerce\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\khehr\\ecommerce\\functions\\index.js changed, reloading triggers"}}
+[debug] [2022-10-06T08:35:47.718Z] Serving at port 9006
+
+[debug] [2022-10-06T08:35:47.907Z] Got response from /__/functions.yaml {"endpoints":{"api":{"platform":"gcfv1","httpsTrigger":{},"entryPoint":"api"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2022-10-06T08:35:47.914Z] shutdown requested via /__/quitquitquit
+
+[info] +  functions: Loaded functions definitions from source: api. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: api."}}
+[debug] [2022-10-06T08:35:48.408Z] Validating nodejs source
+[debug] [2022-10-06T08:35:52.728Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.1",
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0",
+    "stripe": "^10.12.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.9.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2022-10-06T08:35:52.728Z] Building nodejs source
+[debug] [2022-10-06T08:35:52.728Z] Analyzing nodejs backend spec
+[debug] [2022-10-06T08:35:52.729Z] Could not find functions.yaml. Must use http discovery
+[debug] [2022-10-06T08:35:53.139Z] Serving at port 9006
+
+[debug] [2022-10-06T08:35:53.398Z] Got response from /__/functions.yaml {"endpoints":{"api":{"platform":"gcfv1","httpsTrigger":{},"entryPoint":"api"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2022-10-06T08:35:53.407Z] shutdown requested via /__/quitquitquit
+
+[info] +  functions: Loaded functions definitions from source: api. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: api."}}
+[info] i  hosting: 127.0.0.1 - - [06/Oct/2022:08:35:54 +0000] "GET / HTTP/1.1" 200 - "http://localhost:4000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [06/Oct/2022:08:35:54 +0000] \"GET / HTTP/1.1\" 200 - \"http://localhost:4000/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36\""}}
+[info] i  hosting: 127.0.0.1 - - [06/Oct/2022:08:35:54 +0000] "GET /__/firebase/init.js?useEmulator=true HTTP/1.1" 200 - "http://localhost:5000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [06/Oct/2022:08:35:54 +0000] \"GET /__/firebase/init.js?useEmulator=true HTTP/1.1\" 200 - \"http://localhost:5000/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36\""}}
+[info] i  hosting: 127.0.0.1 - - [06/Oct/2022:08:35:55 +0000] "GET / HTTP/1.1" 200 - "http://localhost:4000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [06/Oct/2022:08:35:55 +0000] \"GET / HTTP/1.1\" 200 - \"http://localhost:4000/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36\""}}
+[info] i  hosting: 127.0.0.1 - - [06/Oct/2022:08:35:55 +0000] "GET /__/firebase/init.js?useEmulator=true HTTP/1.1" 200 - "http://localhost:5000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [06/Oct/2022:08:35:55 +0000] \"GET /__/firebase/init.js?useEmulator=true HTTP/1.1\" 200 - \"http://localhost:5000/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36\""}}
+[info] i  hosting: 127.0.0.1 - - [06/Oct/2022:08:35:56 +0000] "GET / HTTP/1.1" 200 - "http://localhost:4000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [06/Oct/2022:08:35:56 +0000] \"GET / HTTP/1.1\" 200 - \"http://localhost:4000/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36\""}}
+[info] i  hosting: 127.0.0.1 - - [06/Oct/2022:08:35:56 +0000] "GET /__/firebase/init.js?useEmulator=true HTTP/1.1" 200 - "http://localhost:5000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [06/Oct/2022:08:35:56 +0000] \"GET /__/firebase/init.js?useEmulator=true HTTP/1.1\" 200 - \"http://localhost:5000/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36\""}}
+[info] i  hosting: 127.0.0.1 - - [06/Oct/2022:08:35:57 +0000] "GET / HTTP/1.1" 200 - "http://localhost:4000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [06/Oct/2022:08:35:57 +0000] \"GET / HTTP/1.1\" 200 - \"http://localhost:4000/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36\""}}
+[info] i  hosting: 127.0.0.1 - - [06/Oct/2022:08:35:57 +0000] "GET /__/firebase/init.js?useEmulator=true HTTP/1.1" 200 - "http://localhost:5000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [06/Oct/2022:08:35:57 +0000] \"GET /__/firebase/init.js?useEmulator=true HTTP/1.1\" 200 - \"http://localhost:5000/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36\""}}
+[debug] [2022-10-06T08:36:18.396Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2022-10-06T08:36:18.396Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2022-10-06T08:36:18.396Z] Accepted request POST /ecomerrece/us-central1/api/payments/create?total=239998 --> us-central1-api
+[debug] [2022-10-06T08:36:18.402Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2022-10-06T08:36:18.402Z] [functions] Got req.url=/ecomerrece/us-central1/api/payments/create?total=239998, mapping to path=/payments/create?total=239998 {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/ecomerrece/us-central1/api/payments/create?total=239998, mapping to path=/payments/create?total=239998"}}
+[debug] [2022-10-06T08:36:18.402Z] [worker-pool] Cleaned up workers for us-central1-api: 1 --> 0 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Cleaned up workers for us-central1-api: 1 --> 0"}}
+[debug] [2022-10-06T08:36:18.409Z] [worker-pool] addWorker(us-central1-api) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] addWorker(us-central1-api)"}}
+[debug] [2022-10-06T08:36:18.410Z] [worker-pool] Adding worker with key us-central1-api, total=1 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Adding worker with key us-central1-api, total=1"}}
+[debug] [2022-10-06T08:36:18.416Z] [work-queue] {"queueLength":1,"workRunningCount":1}
+[debug] [2022-10-06T08:36:18.416Z] [work-queue] {"queueLength":0,"workRunningCount":2}
+[debug] [2022-10-06T08:36:18.416Z] Accepted request POST /ecomerrece/us-central1/api/payments/create?total=239998 --> us-central1-api
+[debug] [2022-10-06T08:36:18.420Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2022-10-06T08:36:18.420Z] [functions] Got req.url=/ecomerrece/us-central1/api/payments/create?total=239998, mapping to path=/payments/create?total=239998 {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/ecomerrece/us-central1/api/payments/create?total=239998, mapping to path=/payments/create?total=239998"}}
+[debug] [2022-10-06T08:36:18.420Z] [worker-pool] submitRequest(triggerId=us-central1-api) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-api)"}}
+[debug] [2022-10-06T08:36:18.420Z] [worker-us-central1-api-dcc08b03-23b5-461f-b6e1-28495caf82e5]: BUSY {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-api-dcc08b03-23b5-461f-b6e1-28495caf82e5]: BUSY"}}
+[debug] [2022-10-06T08:36:18.423Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2022-10-06T08:36:18.429Z] [worker-us-central1-api-dcc08b03-23b5-461f-b6e1-28495caf82e5]: exited {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-api-dcc08b03-23b5-461f-b6e1-28495caf82e5]: exited"}}
+[debug] [2022-10-06T08:36:18.430Z] [worker-us-central1-api-dcc08b03-23b5-461f-b6e1-28495caf82e5]: FINISHED {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-api-dcc08b03-23b5-461f-b6e1-28495caf82e5]: FINISHED"}}
+[debug] FirebaseError: Failed to load function.
+    at Timeout._onTimeout (C:\Users\khehr\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsRuntimeWorker.js:152:24)
+    at listOnTimeout (node:internal/timers:559:17)
+    at processTimers (node:internal/timers:502:7) {"metadata":{"emulator":{"name":"functions"},"message":{"name":"FirebaseError","children":[],"exit":1,"message":"Failed to load function.","status":500}}}
+[debug] [2022-10-06T08:36:48.494Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2022-10-06T08:37:11.938Z] File C:\Users\khehr\ecommerce\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\khehr\\ecommerce\\functions\\index.js changed, reloading triggers"}}
+[debug] [2022-10-06T08:37:12.940Z] Validating nodejs source
+[debug] [2022-10-06T08:37:17.637Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.1",
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0",
+    "stripe": "^10.12.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.9.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2022-10-06T08:37:17.638Z] Building nodejs source
+[debug] [2022-10-06T08:37:17.638Z] Analyzing nodejs backend spec
+[debug] [2022-10-06T08:37:17.639Z] Could not find functions.yaml. Must use http discovery
+[debug] [2022-10-06T08:37:17.656Z] File C:\Users\khehr\ecommerce\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\khehr\\ecommerce\\functions\\index.js changed, reloading triggers"}}
+[debug] [2022-10-06T08:37:17.978Z] Serving at port 9006
+
+[debug] [2022-10-06T08:37:17.995Z] Got response from /__/functions.yaml Failed to generate manifest from function source: SyntaxError: Invalid or unexpected token
+[debug] [2022-10-06T08:37:17.998Z] Failed to parse functions.yamlincomplete explicit mapping pair; a key node is missed; or followed by a non-tabulated empty line at line 1, column 62:
+     ... rom function source: SyntaxError: Invalid or unexpected token
+                                         ^ {"name":"YAMLException","reason":"incomplete explicit mapping pair; a key node is missed; or followed by a non-tabulated empty line","mark":{"name":null,"buffer":"Failed to generate manifest from function source: SyntaxError: Invalid or unexpected token\n\u0000","position":61,"line":0,"column":61},"message":"incomplete explicit mapping pair; a key node is missed; or followed by a non-tabulated empty line at line 1, column 62:\n     ... rom function source: SyntaxError: Invalid or unexpected token\n                                         ^"}
+[debug] [2022-10-06T08:37:18.004Z] shutdown requested via /__/quitquitquit
+
+[error] !!  functions: Failed to load function definition from source: FirebaseError: Failed to load function definition from source: Failed to generate manifest from function source: SyntaxError: Invalid or unexpected token {"metadata":{"emulator":{"name":"functions"},"message":"Failed to load function definition from source: FirebaseError: Failed to load function definition from source: Failed to generate manifest from function source: SyntaxError: Invalid or unexpected token"}}
+[debug] [2022-10-06T08:37:18.658Z] Validating nodejs source
+[debug] [2022-10-06T08:37:22.790Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.1",
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0",
+    "stripe": "^10.12.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.9.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2022-10-06T08:37:22.791Z] Building nodejs source
+[debug] [2022-10-06T08:37:22.791Z] Analyzing nodejs backend spec
+[debug] [2022-10-06T08:37:22.794Z] Could not find functions.yaml. Must use http discovery
+[debug] [2022-10-06T08:37:22.818Z] File C:\Users\khehr\ecommerce\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\khehr\\ecommerce\\functions\\index.js changed, reloading triggers"}}
+[debug] [2022-10-06T08:37:23.126Z] Serving at port 9006
+
+[debug] [2022-10-06T08:37:23.324Z] Got response from /__/functions.yaml {"endpoints":{"api":{"platform":"gcfv1","httpsTrigger":{},"entryPoint":"api"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2022-10-06T08:37:23.332Z] shutdown requested via /__/quitquitquit
+
+[info] +  functions: Loaded functions definitions from source: api. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: api."}}
+[debug] [2022-10-06T08:37:23.824Z] Validating nodejs source
+[debug] [2022-10-06T08:37:29.151Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.1",
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0",
+    "stripe": "^10.12.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.9.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2022-10-06T08:37:29.151Z] Building nodejs source
+[debug] [2022-10-06T08:37:29.151Z] Analyzing nodejs backend spec
+[debug] [2022-10-06T08:37:29.152Z] Could not find functions.yaml. Must use http discovery
+[debug] [2022-10-06T08:37:29.501Z] Serving at port 9006
+
+[debug] [2022-10-06T08:37:29.738Z] Got response from /__/functions.yaml {"endpoints":{"api":{"platform":"gcfv1","httpsTrigger":{},"entryPoint":"api"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2022-10-06T08:37:29.745Z] shutdown requested via /__/quitquitquit
+
+[info] +  functions: Loaded functions definitions from source: api. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: api."}}
+[debug] [2022-10-06T08:37:50.535Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2022-10-06T08:37:50.535Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2022-10-06T08:37:50.535Z] Accepted request POST /ecomerrece/us-central1/api/payments/create?total=239998 --> us-central1-api
+[debug] [2022-10-06T08:37:50.541Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2022-10-06T08:37:50.542Z] [functions] Got req.url=/ecomerrece/us-central1/api/payments/create?total=239998, mapping to path=/payments/create?total=239998 {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/ecomerrece/us-central1/api/payments/create?total=239998, mapping to path=/payments/create?total=239998"}}
+[debug] [2022-10-06T08:37:50.542Z] [worker-pool] Cleaned up workers for us-central1-api: 1 --> 0 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Cleaned up workers for us-central1-api: 1 --> 0"}}
+[debug] [2022-10-06T08:37:50.550Z] [worker-pool] addWorker(us-central1-api) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] addWorker(us-central1-api)"}}
+[debug] [2022-10-06T08:37:50.551Z] [worker-pool] Adding worker with key us-central1-api, total=1 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Adding worker with key us-central1-api, total=1"}}
+[debug] [2022-10-06T08:37:50.553Z] [work-queue] {"queueLength":1,"workRunningCount":1}
+[debug] [2022-10-06T08:37:50.553Z] [work-queue] {"queueLength":0,"workRunningCount":2}
+[debug] [2022-10-06T08:37:50.554Z] Accepted request POST /ecomerrece/us-central1/api/payments/create?total=239998 --> us-central1-api
+[debug] [2022-10-06T08:37:50.558Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2022-10-06T08:37:50.559Z] [functions] Got req.url=/ecomerrece/us-central1/api/payments/create?total=239998, mapping to path=/payments/create?total=239998 {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/ecomerrece/us-central1/api/payments/create?total=239998, mapping to path=/payments/create?total=239998"}}
+[debug] [2022-10-06T08:37:50.559Z] [worker-pool] submitRequest(triggerId=us-central1-api) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-api)"}}
+[debug] [2022-10-06T08:37:50.560Z] [worker-us-central1-api-d384eb68-1c91-451e-a245-6c0fdc5879f4]: BUSY {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-api-d384eb68-1c91-451e-a245-6c0fdc5879f4]: BUSY"}}
+[debug] [2022-10-06T08:37:50.564Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2022-10-06T08:37:50.571Z] [worker-us-central1-api-d384eb68-1c91-451e-a245-6c0fdc5879f4]: exited {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-api-d384eb68-1c91-451e-a245-6c0fdc5879f4]: exited"}}
+[debug] [2022-10-06T08:37:50.571Z] [worker-us-central1-api-d384eb68-1c91-451e-a245-6c0fdc5879f4]: FINISHED {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-api-d384eb68-1c91-451e-a245-6c0fdc5879f4]: FINISHED"}}
+[debug] FirebaseError: Failed to load function.
+    at Timeout._onTimeout (C:\Users\khehr\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsRuntimeWorker.js:152:24)
+    at listOnTimeout (node:internal/timers:559:17)
+    at processTimers (node:internal/timers:502:7) {"metadata":{"emulator":{"name":"functions"},"message":{"name":"FirebaseError","children":[],"exit":1,"message":"Failed to load function.","status":500}}}
+[debug] [2022-10-06T08:38:20.644Z] [work-queue] {"queueLength":0,"workRunningCount":0}

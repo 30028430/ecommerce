@@ -3,8 +3,6 @@ import firebase from "firebase/compat/app";
 import "firebase/compat/auth";
 import "firebase/compat/firestore";
 
-
-
 const firebaseConfig = {
   apiKey: "AIzaSyDR7MT0ZC4qeyzUzUBpz-nSS2lT3z_1TMs",
   authDomain: "ecomerrece.firebaseapp.com",
@@ -15,10 +13,11 @@ const firebaseConfig = {
   measurementId: "G-RVXZE52632",
 };
 
-
 const firebaseapp = firebase.initializeApp(firebaseConfig);
 
-const db = firebaseapp.firestore();
+const db = firebase.firestore();
 const auth = firebase.auth();
 
-export {db , auth};
+// firebaseapp.firestore();
+
+export { db, auth };
